@@ -2,12 +2,12 @@ package produtos.model;
 
 public abstract class Produto {
 	private String nome;
-	private int id;
+	private String id;
 	private int tipo;
 	private float preco;
 	
 	
-	public Produto(String nome, int id, int tipo, float preco) {
+	public Produto(String nome, String id, int tipo, float preco) {
 		this.nome = nome;
 		this.id = id;
 		this.tipo = tipo;
@@ -23,11 +23,11 @@ public abstract class Produto {
 		this.nome = nome;
 	}
 
-	public int getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 
@@ -49,5 +49,6 @@ public abstract class Produto {
 	}
 	
 	public abstract void visualizar();
+
 }
 

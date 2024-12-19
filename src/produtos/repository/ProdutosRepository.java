@@ -7,7 +7,7 @@ public interface ProdutosRepository {
 	// CRUD do E-Commerce
 	public void adicionarProduto(Produto produto);
 	public void listarProdutos();
-	public void buscarProdutosPorId(int Id);
-	public void atualizarProduto(int Id, String nome);
-	public void deletarProduto(int Id);
+	public void buscarProdutosPorId(String id);
+	public void atualizarProduto(String nome, String id, int tipo, float preco);
+	public void deletarProduto(String id);
 }
